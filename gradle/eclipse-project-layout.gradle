@@ -57,7 +57,7 @@ if (isTestProject || name.contains('example')) {
 // Configuration of meta data required by the Eclipse IDE
 eclipse {
 	classpath {
-		plusConfigurations += [configurations.mwe2Runtime]
+		plusConfigurations += [configurations.mwe2RuntimeOnly]
 		file.whenMerged {
 			entries.each { source ->
 				if (source.kind == 'src' && source.path.endsWith('-gen') && !source.path.equals('xtend-gen') ) {
