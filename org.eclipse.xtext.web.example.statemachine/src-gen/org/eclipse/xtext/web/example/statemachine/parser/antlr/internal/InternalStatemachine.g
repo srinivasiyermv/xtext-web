@@ -74,12 +74,7 @@ entryRuleStatemachine returns [EObject current=null]:
 
 // Rule Statemachine
 ruleStatemachine returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -138,12 +133,7 @@ entryRuleSignal returns [EObject current=null]:
 
 // Rule Signal
 ruleSignal returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -198,12 +188,7 @@ entryRuleInputSignal returns [EObject current=null]:
 
 // Rule InputSignal
 ruleInputSignal returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -228,12 +213,7 @@ entryRuleOutputSignal returns [EObject current=null]:
 
 // Rule OutputSignal
 ruleOutputSignal returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			{
@@ -258,12 +238,7 @@ entryRuleState returns [EObject current=null]:
 
 // Rule State
 ruleState returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='state'
 		{
@@ -360,12 +335,7 @@ entryRuleTransition returns [EObject current=null]:
 
 // Rule Transition
 ruleTransition returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='if'
 		{
@@ -422,12 +392,7 @@ entryRuleCondition returns [EObject current=null]:
 
 // Rule Condition
 ruleCondition returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -485,12 +450,7 @@ entryRuleEvent returns [EObject current=null]:
 
 // Rule Event
 ruleEvent returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		(
 			(
@@ -539,12 +499,7 @@ entryRuleCommand returns [EObject current=null]:
 
 // Rule Command
 ruleCommand returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		otherlv_0='set'
 		{
@@ -597,12 +552,7 @@ entryRuleQualifiedName returns [String current=null]:
 
 // Rule QualifiedName
 ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
+:
 	(
 		this_ID_0=RULE_ID
 		{
